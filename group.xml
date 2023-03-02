@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    
+    <groups>
+    <define name="all">
+    <include name = "numbers"></include>
+    <include name = "integers"></include>
+    </define>
+      <run>
+      
+      <include name = "all"></include>
+      </run>
+      </groups>
+    
+    <classes>
+      <class name="com.testng.Grouping_Concepts">
+      
+      
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
